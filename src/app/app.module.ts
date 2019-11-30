@@ -9,7 +9,7 @@ import { AlunoDetailComponent} from './aluno-detail/aluno-detail.component';
 import { AlunoService } from './aluno.service';
 import { MensagemService } from './mensagem.service';
 import { MensagemComponent } from './mensagem/mensagem.component';
-import { DashbordComponent } from './dashbord/dashbord.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { DashbordComponent } from './dashbord/dashbord.component';
     AlunosComponent,
     AlunoDetailComponent,
     MensagemComponent,
-    DashbordComponent
+    DashboardComponent
   ],
 
   imports: [
