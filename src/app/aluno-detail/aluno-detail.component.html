@@ -1,0 +1,10 @@
+<div *ngIf="hero">
+  <h2>{{aluno.nome | uppercase}} Detalhes</h2>
+  <div><span>id: </span>{{aluno.matricula}}</div>
+  <div>
+    <label>nome:
+      <input [(ngModel)]="aluno.nome" placeholder="nome"/>
+    </label>
+  </div>
+  <button (click)="goBack()">retornar</button>
+</div>
