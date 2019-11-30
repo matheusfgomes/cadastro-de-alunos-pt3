@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { AlunosComponent } from './aluno/aluno.component';
 import { AlunoDetailComponent} from './aluno-detail/aluno-detail.component';
 import { AlunoService } from './aluno.service';
-import { MensagemService } from './mensagem.service';
-import { MensagemComponent } from './mensagem/mensagem.component';
+import { MessageService } from './message.service';
+import { MessageComponent } from './message/message.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 
@@ -17,7 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     AlunosComponent,
     AlunoDetailComponent,
-    MensagemComponent,
+    MessageComponent,
     DashboardComponent
   ],
 

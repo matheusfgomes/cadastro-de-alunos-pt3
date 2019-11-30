@@ -20,12 +20,12 @@ export class AlunoDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getAluno();
+    this.getAlunos();
   }
 
-  getAluno(): void {
+  getAlunos(): void {
     const matricula = +this.route.snapshot.paramMap.get('matricula');
-    this.alunoService.getAluno(matricula)
+    this.alunoService.getAlunos(matricula)
       .subscribe(aluno => this.aluno = aluno);
   }
 

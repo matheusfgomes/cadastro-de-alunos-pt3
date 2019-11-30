@@ -4,7 +4,7 @@ import {Aluno} from './aluno';
 import {ALUNOS} from './mock-alunos' 
 import { Observable, of } from 'rxjs';
 
-import {MensagemService} from './mensagem.service';
+import {MessageService} from './message.service';
 
 
 @Injectable({ 
@@ -14,18 +14,18 @@ import {MensagemService} from './mensagem.service';
 
 export class AlunoService {
 
-  constructor(private mensagemService: MensagemService) { }
+  constructor(private messageService: MessageService) { }
 
 
 
 getAlunos(): Observable<Aluno[]>{
   
-  this.mensagemService.add('AlunoService: fetched alunos');
+  this.messageService.add('AlunoService: fetched alunos');
   return of (ALUNOS);
 }
 
-getAluno(matricula: number): Observable<Aluno>{
-  this.mensagemService.add('Serviço Escolar informa' );
+getAlunos(matricula: number): Observable<Aluno>{
+  this.messageService.add('Serviço Escolar informa' );
   return of (ALUNOS.find(aluno => aluno.matricula === matricula));
 }
 
