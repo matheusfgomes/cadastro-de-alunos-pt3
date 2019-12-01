@@ -18,13 +18,13 @@ export class AlunoService {
 
 
 
-getAlunos(): Observable<Aluno[]>{
+   getAlunos(): Observable<Aluno[]>{
   
   this.messageService.add('AlunoService: fetched alunos');
   return of (ALUNOS);
 }
 
-getAlunos(matricula: number): Observable<Aluno>{
+  getAlunos(matricula: number): Observable<Aluno>{
   this.messageService.add('Serviço Escolar informa' );
   return of (ALUNOS.find(aluno => aluno.matricula === matricula));
 }
