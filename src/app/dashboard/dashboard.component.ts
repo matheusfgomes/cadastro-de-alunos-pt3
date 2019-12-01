@@ -8,7 +8,7 @@ import { AlunoService } from '../aluno.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  heroes: Aluno[] = [];
+  alunos: Aluno[] = [];
 
   constructor(private alunoService: AlunoService) { }
 
@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
     this.getAlunos();
   }
 
-  getHeroes(): void {
+  getAlunos(): void {
     this.alunoService.getAlunos()
       .subscribe(alunos => this.alunos = alunos.slice(1, 5));
   }

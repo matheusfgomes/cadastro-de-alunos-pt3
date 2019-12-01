@@ -27,9 +27,9 @@ export class AlunosComponent implements OnInit{
   onSelect(aluno:Aluno): void{
     this.selectedAluno = aluno;
   }
-getHeroes(): void {
+getAlunos(): void {
     this.alunoService.getAlunos()
-        .subscribe(heroes => this.alunos = aluno);
+        .subscribe(alunos => this.alunos = aluno);
   }
 
  

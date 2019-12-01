@@ -8,8 +8,8 @@ import { AlunoDetailComponent }  from './aluno-detail/aluno-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: AlunoDetailComponent },
-  { path: 'heroes', component: AlunosComponent }
+  { path: 'detail/:matricula', component: AlunoDetailComponent },
+  { path: 'aluno', component: AlunosComponent }
 ];
 
 @NgModule({
